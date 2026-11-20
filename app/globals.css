@@ -1,0 +1,166 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ───────────── Design tokens ─────────────
+   Change colours here and the entire site follows.
+   --primary is the OpenGridLabs signature cyan/teal accent. */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@theme {
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee-reverse: marquee 50s linear infinite reverse;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.985 0.003 210);
+  --foreground: oklch(0.18 0.02 235);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.02 235);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.02 235);
+  --primary: oklch(0.58 0.18 205);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.955 0.008 215);
+  --secondary-foreground: oklch(0.22 0.02 235);
+  --muted: oklch(0.955 0.008 215);
+  --muted-foreground: oklch(0.48 0.02 235);
+  --accent: oklch(0.94 0.015 210);
+  --accent-foreground: oklch(0.22 0.02 235);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.90 0.01 215);
+  --input: oklch(0.90 0.01 215);
+  --ring: oklch(0.58 0.18 205);
+}
+
+.dark {
+  --background: oklch(0.145 0.018 240);
+  --foreground: oklch(0.96 0.006 215);
+  --card: oklch(0.18 0.02 240);
+  --card-foreground: oklch(0.96 0.006 215);
+  --popover: oklch(0.18 0.02 240);
+  --popover-foreground: oklch(0.96 0.006 215);
+  --primary: oklch(0.74 0.17 195);
+  --primary-foreground: oklch(0.14 0.03 240);
+  --secondary: oklch(0.24 0.02 240);
+  --secondary-foreground: oklch(0.96 0.006 215);
+  --muted: oklch(0.23 0.018 240);
+  --muted-foreground: oklch(0.70 0.02 225);
+  --accent: oklch(0.26 0.025 220);
+  --accent-foreground: oklch(0.96 0.006 215);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 16%);
+  --ring: oklch(0.74 0.17 195);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (min-width: 1280px) {
+    html { font-size: 105%; }
+  }
+  @media (min-width: 1920px) {
+    html { font-size: 112%; }
+  }
+  body {
+    @apply bg-background text-foreground overscroll-none;
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--primary) 35%, transparent);
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+  h1, h2, h3, h4 {
+    @apply scroll-m-20 tracking-tight;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  .border-grid { @apply border-dashed border-border; }
+
+  .container-wrapper {
+    @apply max-w-[1600px] min-[1400px]:border-x border-border mx-auto w-full border-dashed;
+  }
+  .container {
+    @apply px-4 mx-auto sm:px-6 xl:px-8 max-w-screen-2xl;
+  }
+
+  /* Grid pattern signature textures */
+  .bg-grid {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, color-mix(in oklab, var(--foreground) 7%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklab, var(--foreground) 7%, transparent) 1px, transparent 1px);
+  }
+
+  .bg-grid-small {
+    background-size: 20px 20px;
+    background-image: 
+      linear-gradient(to right, color-mix(in oklab, var(--foreground) 6%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklab, var(--foreground) 6%, transparent) 1px, transparent 1px);
+  }
+
+  .bg-dots {
+    background-image: radial-gradient(
+      color-mix(in oklab, var(--foreground) 14%, transparent) 1px,
+      transparent 1px
+    );
+    background-size: 24px 24px;
+  }
+
+  .marquee-mask {
+    mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-marquee-reverse {
+    animation-play-state: paused;
+  }
+}
