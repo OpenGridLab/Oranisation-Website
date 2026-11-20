@@ -1,6 +1,6 @@
-# OpenGridLabs Official Website
+# OpenGridLab Official Website
 
-The official web portal for **OpenGridLabs** — an open-source research and engineering collective dedicated to modular distributed systems, grid computing primitives, and modern developer tooling.
+The official web portal for **OpenGridLab** — an open-source research and engineering collective dedicated to modular distributed systems, grid computing primitives, and modern developer tooling.
 
 ---
 
@@ -31,7 +31,7 @@ Engineered with the same cutting-edge stack as the portfolio, customized for an 
 - **Official Contact Email**: `connect.opengridlab@gmail.com`
 
 ### 🔄 Automated GitHub Telemetry
-When visitors open the webpage, OpenGridLabs automatically queries the GitHub API (`/lib/github.ts`) for:
+When visitors open the webpage, OpenGridLab automatically queries the GitHub API (`/lib/github.ts`) for:
 1. The organization creation timestamp to accurately display when it was established.
 2. Real-time profiles of the Owner and Maintainers (live avatars, names, bios, public repositories, and follower counts).
 3. **Resilience**: Cached for 5 minutes with automatic zero-error fallback data in `config/site.ts` in case of rate limits or offline mode.
@@ -66,7 +66,7 @@ The site is built so anyone can modify organizational details, members, or conta
 
 ```bash
 # Navigate to the project directory
-cd OpenGridLabs
+cd OpenGridLab
 
 # Install dependencies
 npm install

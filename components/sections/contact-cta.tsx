@@ -15,7 +15,7 @@ export function ContactCta() {
           </span>
 
           <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            Have an inquiry or proposal for OpenGridLabs?
+            Have an inquiry or proposal for OpenGridLab?
           </h2>
 
           <p className="text-base text-muted-foreground sm:text-lg leading-relaxed">

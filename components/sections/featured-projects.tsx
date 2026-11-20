@@ -13,7 +13,7 @@ export function FeaturedProjects() {
       id="projects"
       badge="03 // OPEN-SOURCE REPOSITORIES"
       title="Projects & Repositories"
-      description="Tools, libraries, and modular distributed primitives architected by OpenGridLabs."
+      description="Tools, libraries, and modular distributed primitives architected by OpenGridLab."
       action={
         <Button asChild variant="outline" className="rounded-full">
           <Link href="/projects">
@@ -26,7 +26,7 @@ export function FeaturedProjects() {
       {!hasProjects ? (
         <EmptyProjects
           title="Projects Currently in Lab Incubation"
-          description="OpenGridLabs is currently engineering initial internal builds and protocols. No public repositories have been released yet. Stay tuned to our GitHub organization for our upcoming debut release."
+          description="OpenGridLab is currently engineering initial internal builds and protocols. No public repositories have been released yet. Stay tuned to our GitHub organization for our upcoming debut release."
         />
       ) : (
         <div className="grid gap-6 md:grid-cols-2">

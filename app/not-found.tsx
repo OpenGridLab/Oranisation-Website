@@ -51,7 +51,7 @@ export default function NotFound() {
             Grid Node Unreachable
           </h2>
           <p className="text-muted-foreground sm:text-lg">
-            The page or resource you requested does not exist on the OpenGridLabs network,
+            The page or resource you requested does not exist on the OpenGridLab network,
             or it has been repositioned.
           </p>
         </div>

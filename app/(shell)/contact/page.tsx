@@ -11,8 +11,8 @@ import Pager from '@/components/pager';
 import ContactForm from './ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contact OpenGridLabs',
-  description: 'Connect with the OpenGridLabs team for inquiries, research collaborations, and open-source proposals.',
+  title: 'Contact OpenGridLab',
+  description: 'Connect with the OpenGridLab team for inquiries, research collaborations, and open-source proposals.',
 };
 
 export default function ContactPage() {
@@ -23,7 +23,7 @@ export default function ContactPage() {
       <PageHeader>
         <PageHeaderHeading>Contact the Lab</PageHeaderHeading>
         <PageHeaderDescription>
-          Reach out to OpenGridLabs for collaboration proposals, distributed systems questions, or partnership discussions.
+          Reach out to OpenGridLab for collaboration proposals, distributed systems questions, or partnership discussions.
         </PageHeaderDescription>
       </PageHeader>
 

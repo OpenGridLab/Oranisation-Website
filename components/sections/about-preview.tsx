@@ -16,7 +16,7 @@ export function AboutPreview({ establishedFormatted }: { establishedFormatted?: 
       id="about"
       badge="01 // ARCHITECTURAL FOUNDATION"
       title="Decentralized systems, engineered in the open."
-      description="OpenGridLabs exists to rethink developer tooling and distributed computation primitives."
+      description="OpenGridLab exists to rethink developer tooling and distributed computation primitives."
       action={
         <Button asChild variant="outline" className="rounded-full">
           <Link href="/about">
@@ -67,7 +67,7 @@ export function AboutPreview({ establishedFormatted }: { establishedFormatted?: 
                 <span>Open Protocol Commitment</span>
               </div>
               <p className="text-sm text-foreground/90 leading-normal">
-                Every line of code and technical RFC developed by OpenGridLabs is publicly licensed under
+                Every line of code and technical RFC developed by OpenGridLab is publicly licensed under
                 permissive open-source terms. We believe foundational developer infrastructure belongs to the commons.
               </p>
             </div>

@@ -21,7 +21,7 @@ export function MobileNav() {
         </Button>
       </DrawerTrigger>
       <DrawerContent className="max-h-[85vh]">
-        <DrawerTitle className="sr-only">OpenGridLabs Navigation</DrawerTitle>
+        <DrawerTitle className="sr-only">OpenGridLab Navigation</DrawerTitle>
         <div data-lenis-prevent className="overflow-y-auto px-5 pb-8 pt-3">
           <div className="flex items-center gap-2.5 mb-4 pb-3 border-b">
             <div className="flex size-7 items-center justify-center rounded-lg border border-primary/30 bg-primary/10 text-primary">

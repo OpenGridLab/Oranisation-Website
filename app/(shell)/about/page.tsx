@@ -9,8 +9,8 @@ import Pager from '@/components/pager';
 import { getLabAutomatedData } from '@/lib/github';
 
 export const metadata: Metadata = {
-  title: 'About OpenGridLabs',
-  description: 'Mission, history, and architectural foundations of OpenGridLabs.',
+  title: 'About OpenGridLab',
+  description: 'Mission, history, and architectural foundations of OpenGridLab.',
 };
 
 export const revalidate = 300;
@@ -26,7 +26,7 @@ export default async function AboutPage() {
           <Sparkles className="size-3" />
           <span>ESTABLISHED {established.toUpperCase()}</span>
         </div>
-        <PageHeaderHeading>About OpenGridLabs</PageHeaderHeading>
+        <PageHeaderHeading>About OpenGridLab</PageHeaderHeading>
         <PageHeaderDescription>
           An independent open-source research and engineering lab dedicated to distributed systems,
           modular grid computation, and developer productivity tooling.
@@ -37,7 +37,7 @@ export default async function AboutPage() {
         {/* Core Narrative */}
         <Reveal className="prose prose-neutral dark:prose-invert max-w-none space-y-6 text-muted-foreground leading-relaxed sm:text-lg">
           <p>
-            <strong className="text-foreground">OpenGridLabs</strong> was established in{' '}
+            <strong className="text-foreground">OpenGridLab</strong> was established in{' '}
             <strong className="text-foreground">{established}</strong> under the leadership of{' '}
             <Link
               href={`https://github.com/${siteConfig.owner.username}`}

@@ -3,7 +3,7 @@ import * as React from 'react';
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
-  // Signature OpenGridLabs logo: interconnected grid nodes and vectors
+  // Signature OpenGridLab logo: interconnected grid nodes and vectors
   logo: (props: IconProps) => (
     <svg
       viewBox="0 0 24 24"

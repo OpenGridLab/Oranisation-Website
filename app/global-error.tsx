@@ -12,7 +12,7 @@ export default function GlobalError({
     <html lang="en">
       <body className="flex min-h-svh flex-col items-center justify-center bg-[#090d16] p-6 text-slate-100 antialiased font-sans">
         <div className="max-w-md text-center space-y-4">
-          <h1 className="text-3xl font-bold tracking-tight">OpenGridLabs - Critical Alert</h1>
+          <h1 className="text-3xl font-bold tracking-tight">OpenGridLab - Critical Alert</h1>
           <p className="text-slate-400 text-sm">
             A fatal runtime error interrupted root initialization.
           </p>

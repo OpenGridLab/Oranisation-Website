@@ -17,7 +17,7 @@ export const siteConfig = {
     'Pioneering open-source distributed systems, modular grid architectures, and developer tooling.',
   description:
     'OpenGridLab is an open-source research and engineering organization dedicated to building resilient distributed systems, modern developer infrastructure, and modular software frameworks.',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://opengridlabs.org',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://opengridlab.org',
 
   // Establishment & Timeline
   // This value is used as a fallback. When the site loads, it also queries the GitHub API
@@ -88,7 +88,7 @@ export const siteConfig = {
   links: {
     github: 'https://github.com/OpenGridLab',
     email: 'mailto:connect.opengridlab@gmail.com',
-    twitter: '', // Optional: e.g. 'https://twitter.com/OpenGridLabs'
+    twitter: '', // Optional: e.g. 'https://twitter.com/OpenGridLab'
     discord: '', // Optional: e.g. 'https://discord.gg/...'
     docs: '/about',
   },

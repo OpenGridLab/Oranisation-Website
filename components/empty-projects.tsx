@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 export function EmptyProjects({
   title = "Incubating New Initiatives",
-  description = "OpenGridLabs is actively researching and engineering initial core frameworks. No public projects have been tagged for release yet.",
+  description = "OpenGridLab is actively researching and engineering initial core frameworks. No public projects have been tagged for release yet.",
 }: {
   title?: string;
   description?: string;

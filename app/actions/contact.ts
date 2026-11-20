@@ -47,15 +47,15 @@ export async function sendMessage(_prev: ContactState, formData: FormData): Prom
       from: USER_MAILER || `"${siteConfig.name} Contact" <${NODEMAILER_USER}>`,
       to: targetRecipient,
       replyTo: email,
-      subject: `[OpenGridLabs Inquiry] Message from ${fullname.slice(0, 80)}`,
+      subject: `[OpenGridLab Inquiry] Message from ${fullname.slice(0, 80)}`,
       html: `
         <div style="font-family: sans-serif; line-height: 1.6; color: #111;">
-          <h2 style="color: #0284c7;">New Message via OpenGridLabs</h2>
+          <h2 style="color: #0284c7;">New Message via OpenGridLab</h2>
           <p><strong>From:</strong> ${escapeHtml(fullname)} &lt;${escapeHtml(email)}&gt;</p>
           <hr style="border: 0; border-top: 1px solid #eee; margin: 16px 0;" />
           <p style="white-space: pre-line;">${escapeHtml(message)}</p>
           <hr style="border: 0; border-top: 1px solid #eee; margin: 16px 0;" />
-          <small style="color: #666;">Sent from the official OpenGridLabs website.</small>
+          <small style="color: #666;">Sent from the official OpenGridLab website.</small>
         </div>
       `,
     });

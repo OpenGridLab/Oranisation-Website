@@ -15,7 +15,7 @@ export function TeamSection({ members }: { members: GitHubMemberData[] }) {
       id="team"
       badge="02 // LEADERSHIP & MAINTAINERS"
       title="Owner & Core Maintainers"
-      description="The developers leading OpenGridLabs research, architecture, and open-source infrastructure."
+      description="The developers leading OpenGridLab research, architecture, and open-source infrastructure."
       action={
         <Button asChild variant="outline" className="rounded-full">
           <Link href="/team">

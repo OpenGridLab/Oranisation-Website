@@ -10,7 +10,7 @@ import { getLabAutomatedData } from '@/lib/github';
 
 export const metadata: Metadata = {
   title: 'Team & Maintainers',
-  description: 'Owner and core maintainers of OpenGridLabs.',
+  description: 'Owner and core maintainers of OpenGridLab.',
 };
 
 export const revalidate = 300;
@@ -28,7 +28,7 @@ export default async function TeamPage() {
         </div>
         <PageHeaderHeading>Owner & Maintainers</PageHeaderHeading>
         <PageHeaderDescription>
-          Meet the minds behind OpenGridLabs. Information below is automatically loaded from the
+          Meet the minds behind OpenGridLab. Information below is automatically loaded from the
           GitHub API to reflect current profiles and activity.
         </PageHeaderDescription>
       </PageHeader>
@@ -91,7 +91,7 @@ export default async function TeamPage() {
         {/* Join the Lab callout */}
         <Reveal className="rounded-2xl border border-dashed border-border/80 bg-card/40 p-6 sm:p-8 text-center space-y-4">
           <h3 className="font-display text-xl font-bold">
-            Interested in Contributing to OpenGridLabs?
+            Interested in Contributing to OpenGridLab?
           </h3>
           <p className="text-sm text-muted-foreground max-w-xl mx-auto leading-relaxed">
             We welcome open-source contributions, distributed systems experiments, and RFC proposals.

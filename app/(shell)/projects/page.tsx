@@ -10,7 +10,7 @@ import Pager from '@/components/pager';
 
 export const metadata: Metadata = {
   title: 'Projects & Repositories',
-  description: 'Open-source distributed systems and tooling projects by OpenGridLabs.',
+  description: 'Open-source distributed systems and tooling projects by OpenGridLab.',
 };
 
 export default function ProjectsPage() {
@@ -21,7 +21,7 @@ export default function ProjectsPage() {
       <PageHeader>
         <PageHeaderHeading>Projects</PageHeaderHeading>
         <PageHeaderDescription>
-          Open-source software, experimental primitives, and developer tooling architected by OpenGridLabs.
+          Open-source software, experimental primitives, and developer tooling architected by OpenGridLab.
         </PageHeaderDescription>
       </PageHeader>
 
@@ -30,7 +30,7 @@ export default function ProjectsPage() {
         {!hasProjects ? (
           <EmptyProjects
             title="Projects In Research & Incubation"
-            description="OpenGridLabs is actively incubating foundational repositories. No public releases have been scheduled yet. As soon as code is tagged for release, it will automatically populate here."
+            description="OpenGridLab is actively incubating foundational repositories. No public releases have been scheduled yet. As soon as code is tagged for release, it will automatically populate here."
           />
         ) : (
           <Stagger className="grid gap-6 md:grid-cols-2">

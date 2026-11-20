@@ -94,7 +94,7 @@ export default function ContactForm() {
 
       <Button type="submit" size="lg" disabled={pending} className="w-full rounded-full sm:w-auto">
         {pending ? <Loader2 className="mr-2 size-4 animate-spin" /> : <Send className="mr-2 size-4" />}
-        {pending ? 'Transmitting...' : 'Send to OpenGridLabs'}
+        {pending ? 'Transmitting...' : 'Send to OpenGridLab'}
       </Button>
     </form>
   );

@@ -14,7 +14,7 @@ export default function ErrorPage({
 }) {
   useEffect(() => {
     // Optionally log to an error monitoring service
-    console.error('OpenGridLabs Application Error:', error);
+    console.error('OpenGridLab Application Error:', error);
   }, [error]);
 
   return (

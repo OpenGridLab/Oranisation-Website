@@ -67,7 +67,7 @@ export function Hero({ orgData }: { orgData?: GitHubOrgData }) {
         <div>
           <h1 className="font-display text-[clamp(3.2rem,14vw,11.5rem)] font-bold leading-[0.88] tracking-[-0.04em]">
             <SplitText text="OPENGRID" delay={0.15} className="block text-foreground" />
-            <SplitText text="LABS." delay={0.3} className="block text-primary" />
+            <SplitText text="LAB." delay={0.3} className="block text-primary" />
           </h1>
 
           {/* Leadership & Maintainer attribution */}

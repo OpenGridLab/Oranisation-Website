@@ -56,7 +56,7 @@ function formatEstablishedDate(isoDateString?: string | null): { formatted: stri
 function getAuthHeaders(): HeadersInit {
   const headers: HeadersInit = {
     Accept: 'application/vnd.github.v3+json',
-    'User-Agent': 'OpenGridLabs-Web',
+    'User-Agent': 'OpenGridLab-Web',
   };
   if (process.env.GITHUB_TOKEN) {
     headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
