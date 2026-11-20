@@ -1,6 +1,6 @@
 /**
  * =====================================================================
- *  OPENGRIDLABS - CENTRAL CONFIGURATION FILE
+ *  OPENGRIDLAB - CENTRAL CONFIGURATION FILE
  * =====================================================================
  *  EDIT THIS FILE TO CUSTOMIZE THE ENTIRE WEBSITE.
  *  All organization metadata, branding, member definitions,
@@ -10,20 +10,20 @@
 
 export const siteConfig = {
   // Organization Identity
-  name: 'OpenGridLabs',
-  legalName: 'OpenGridLabs Collective',
+  name: 'OpenGridLab',
+  legalName: 'OpenGridLab',
   tagline: 'Open-Source Distributed Systems & Developer Tooling Lab',
   shortDescription:
     'Pioneering open-source distributed systems, modular grid architectures, and developer tooling.',
   description:
-    'OpenGridLabs is an open-source research and engineering organization dedicated to building resilient distributed systems, modern developer infrastructure, and modular software frameworks.',
+    'OpenGridLab is an open-source research and engineering organization dedicated to building resilient distributed systems, modern developer infrastructure, and modular software frameworks.',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://opengridlabs.org',
 
   // Establishment & Timeline
   // This value is used as a fallback. When the site loads, it also queries the GitHub API
   // for the organization's `created_at` timestamp to automatically reflect the real creation date!
-  established: 'March 2024',
-  establishedYear: '2024',
+  established: 'November 2026',
+  establishedYear: '2026',
   status: 'Active Lab · Research & Development',
 
   // Location / Base
@@ -34,7 +34,7 @@ export const siteConfig = {
   contactEmail: 'connect.opengridlab@gmail.com',
 
   // GitHub Organization Settings
-  githubOrg: 'OpenGridLabs',
+  githubOrg: 'OpenGridLab',
 
   // Key Roles & Leadership
   // Automatic loader queries GitHub for these usernames (avatar, bio, followers, public repos)
@@ -86,7 +86,7 @@ export const siteConfig = {
 
   // Links & Social Profiles
   links: {
-    github: 'https://github.com/OpenGridLabs',
+    github: 'https://github.com/OpenGridLab',
     email: 'mailto:connect.opengridlab@gmail.com',
     twitter: '', // Optional: e.g. 'https://twitter.com/OpenGridLabs'
     discord: '', // Optional: e.g. 'https://discord.gg/...'
@@ -95,8 +95,8 @@ export const siteConfig = {
 
   // SEO Keywords
   keywords: [
-    'OpenGridLabs',
-    'OpenGrid Labs',
+    'OpenGridLab',
+    'OpenGrid Lab',
     'open source',
     'distributed systems',
     'grid computing',
